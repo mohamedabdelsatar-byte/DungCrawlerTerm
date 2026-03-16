@@ -24,7 +24,7 @@ struct Player{
     char gender;
     bool hasKey = false;
     int Health = 5;
-    bool inv [7] = {false, false, false, false, true, false, false};
+    bool inv [7] = {false, false, false, false, false, false, false};
 };
 struct GameState{
     bool visited[5] = {false, false, false, false, false};
