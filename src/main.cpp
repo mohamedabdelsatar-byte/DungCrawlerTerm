@@ -45,6 +45,7 @@ int main(){
                 delayMs(1000);
 
                     do{
+                        GameART::drawDoors();
                         slowPrint("He ponders at which door to open? (1->5): ", 50);
                         cin>>playChoice;
 

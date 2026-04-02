@@ -1,11 +1,20 @@
 #include "ASCII_Art.hpp"
 #include <iostream>
+#include <string>
+
 
 
 namespace GameART{
 
 void drawDoors(){
-    std::cout<< R"(
+ const std::string RESET   = "\033[0m";
+ const std::string GREEN   = "\033[32m";
+ const std::string RED     = "\033[31m";
+ const std::string CYAN    = "\033[36m";
+ const std::string MAGENTA = "\033[35m";
+ const std::string YELLOW  = "\033[33m";
+
+ std::cout << R"(
 ___|___|___|___|___|___|___|___|___|___|___|___|___|___|___
 _|___|___|___|___|___|___|___|___|___|___|___|___|___|___|
 ___|  .-------.  .-------.  .-------.  .-------.  .-------.  |___
@@ -20,11 +29,19 @@ ___|  | |...| |  | | : | |  | |:.:| |  | |...| |  | |   | |  |___
 _|__  | |   | |  | |   | |  | |   | |  | |   | |  | |:::| |  _|___
 ___|  | |___| |  | |_._| |  | |___| |  | |_._| |  | |___| |  |___
 _|__  '-------'  '-------'  '-------'  '-------'  '-------'  _|___
-___|   DOOR 1     DOOR 2     DOOR 3     DOOR 4     DOOR 5    |___
+___|   )";
+
+ std::cout << GREEN   << "DOOR 1" << RESET << "     ";
+ std::cout << RED     << "DOOR 2" << RESET << "     ";
+ std::cout << CYAN    << "DOOR 3" << RESET << "     ";
+ std::cout << MAGENTA << "DOOR 4" << RESET << "     ";
+ std::cout << YELLOW  << "DOOR 5" << RESET;
+
+ // 3. Close the wall
+ std::cout << R"(    |___
 _|___|___|___|___|___|___|___|___|___|___|___|___|___|___|
 ___|___|___|___|___|___|___|___|___|___|___|___|___|___|___
-)"<<"\n";
-    
+)" << std::endl;
 }
 
 void drawMenu(){

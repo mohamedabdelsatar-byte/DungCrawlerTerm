@@ -27,11 +27,10 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="862b815b-2ef7-451b-84af-6799d568dda9" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/C++PJ.code-workspace" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/desktop.ini" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dooropener" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dooropener.cpp" beforeDir="false" />
+    <list default="true" id="862b815b-2ef7-451b-84af-6799d568dda9" name="Changes" comment="Cleaned and Organized the project.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ASCII_Art.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/ASCII_Art.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,17 +101,17 @@
   }
 }</component>
   <component name="RunManager" selected="CMake Application.DungCrawlTerm">
-    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
-      <method v="2">
-        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="ArtTester" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="DungCrawlTerm" TARGET_NAME="ArtTester" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="DungCrawlTerm" RUN_TARGET_NAME="ArtTester">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
     <configuration name="DungCrawlTerm" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="DungCrawlTerm" TARGET_NAME="DungCrawlTerm" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="DungCrawlTerm" RUN_TARGET_NAME="DungCrawlTerm">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -135,8 +134,26 @@
       <workItem from="1774297990798" duration="1437000" />
       <workItem from="1774301954177" duration="3068000" />
       <workItem from="1774466381445" duration="2134000" />
-      <workItem from="1775130020144" duration="4052000" />
+      <workItem from="1775130020144" duration="4243000" />
+      <workItem from="1775134295695" duration="714000" />
     </task>
+    <task id="LOCAL-00001" summary="Cleaned and Organized the project.">
+      <option name="closed" value="true" />
+      <created>1775134128033</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1775134128033</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Cleaned and Organized the project.">
+      <option name="closed" value="true" />
+      <created>1775134169633</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1775134169633</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -146,5 +163,9 @@
     <isAutomaticCheckingOnLaunch value="false" />
     <isAutomaticFoundErrors value="true" />
     <isAutomaticReloadCMake value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Cleaned and Organized the project." />
+    <option name="LAST_COMMIT_MESSAGE" value="Cleaned and Organized the project." />
   </component>
 </project>
