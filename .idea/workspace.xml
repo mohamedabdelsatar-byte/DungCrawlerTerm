@@ -4,6 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="BackendCodeEditorMiscSettings">
+    <option name="/Default/Environment/Hierarchy/GeneratedFilesCacheKey/Timestamp/@EntryValue" value="5" type="long" />
     <option name="/Default/Housekeeping/FeatureSuggestion/FeatureSuggestionManager/DisabledSuggesters/=SwitchToGoToActionSuggester/@EntryIndexedValue" value="true" type="bool" />
   </component>
   <component name="CMakePresetLoader">{
@@ -17,8 +18,8 @@
   </component>
   <component name="CMakeRunConfigurationManager">
     <generated>
+      <config projectName="DungCrawlTerm" targetName="SFMLTEST" />
       <config projectName="DungCrawlTerm" targetName="DungCrawlTerm" />
-      <config projectName="DungCrawlTerm" targetName="ArtTester" />
     </generated>
   </component>
   <component name="CMakeSettings">
@@ -27,10 +28,11 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="862b815b-2ef7-451b-84af-6799d568dda9" name="Changes" comment="Cleaned and Organized the project.">
+    <list default="true" id="862b815b-2ef7-451b-84af-6799d568dda9" name="Changes" comment="Changed the Text color of the doors + Included the drawDoor function into the main code.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ASCII_Art.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/ASCII_Art.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/testerASCII.cpp" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,6 +82,7 @@
   &quot;keyToString&quot;: {
     &quot;CMake Application.ArtTester.executor&quot;: &quot;Run&quot;,
     &quot;CMake Application.DungCrawlTerm.executor&quot;: &quot;Run&quot;,
+    &quot;CMake Application.SFMLTEST.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.RadMigrateCodeStyle&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
@@ -98,15 +101,25 @@
     &quot;org.rust.first.attach.projects&quot;: &quot;true&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;CPPToolchains&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
+      &quot;C++&quot;
+    ]
   }
 }</component>
-  <component name="RunManager" selected="CMake Application.DungCrawlTerm">
-    <configuration name="ArtTester" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="DungCrawlTerm" TARGET_NAME="ArtTester" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="DungCrawlTerm" RUN_TARGET_NAME="ArtTester">
+  <component name="RunManager" selected="CMake Application.SFMLTEST">
+    <configuration name="DungCrawlTerm" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="DungCrawlTerm" TARGET_NAME="DungCrawlTerm" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="DungCrawlTerm" RUN_TARGET_NAME="DungCrawlTerm">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DungCrawlTerm" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="DungCrawlTerm" TARGET_NAME="DungCrawlTerm" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="DungCrawlTerm" RUN_TARGET_NAME="DungCrawlTerm">
+    <configuration name="FLAC" type="CMakeRunConfiguration" factoryName="Application" folderName="Dependencies" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="DungCrawlTerm" TARGET_NAME="FLAC" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SFMLTEST" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="DungCrawlTerm" TARGET_NAME="SFMLTEST" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="DungCrawlTerm" RUN_TARGET_NAME="SFMLTEST">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -116,9 +129,76 @@
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
+    <configuration name="benchmark_residual" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="DungCrawlTerm" TARGET_NAME="benchmark_residual" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="DungCrawlTerm" RUN_TARGET_NAME="benchmark_residual">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="freetype" type="CMakeRunConfiguration" factoryName="Application" folderName="Dependencies" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="DungCrawlTerm" TARGET_NAME="freetype" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ogg" type="CMakeRunConfiguration" factoryName="Application" folderName="Dependencies" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="DungCrawlTerm" TARGET_NAME="ogg" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="sfml-audio" type="CMakeRunConfiguration" factoryName="Application" folderName="SFML" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="DungCrawlTerm" TARGET_NAME="sfml-audio" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="sfml-graphics" type="CMakeRunConfiguration" factoryName="Application" folderName="SFML" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="DungCrawlTerm" TARGET_NAME="sfml-graphics" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="sfml-network" type="CMakeRunConfiguration" factoryName="Application" folderName="SFML" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="DungCrawlTerm" TARGET_NAME="sfml-network" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="sfml-system" type="CMakeRunConfiguration" factoryName="Application" folderName="SFML" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="DungCrawlTerm" TARGET_NAME="sfml-system" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="sfml-window" type="CMakeRunConfiguration" factoryName="Application" folderName="SFML" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="DungCrawlTerm" TARGET_NAME="sfml-window" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="vorbis" type="CMakeRunConfiguration" factoryName="Application" folderName="Dependencies" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="DungCrawlTerm" TARGET_NAME="vorbis" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="vorbisenc" type="CMakeRunConfiguration" factoryName="Application" folderName="Dependencies" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="DungCrawlTerm" TARGET_NAME="vorbisenc" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="vorbisfile" type="CMakeRunConfiguration" factoryName="Application" folderName="Dependencies" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="DungCrawlTerm" TARGET_NAME="vorbisfile" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
     <list>
-      <item itemvalue="CMake Application.ArtTester" />
+      <item itemvalue="CMake Application.FLAC" />
+      <item itemvalue="CMake Application.freetype" />
+      <item itemvalue="CMake Application.ogg" />
+      <item itemvalue="CMake Application.vorbis" />
+      <item itemvalue="CMake Application.vorbisenc" />
+      <item itemvalue="CMake Application.vorbisfile" />
+      <item itemvalue="CMake Application.sfml-network" />
+      <item itemvalue="CMake Application.sfml-window" />
+      <item itemvalue="CMake Application.sfml-audio" />
+      <item itemvalue="CMake Application.sfml-graphics" />
+      <item itemvalue="CMake Application.sfml-system" />
       <item itemvalue="CMake Application.DungCrawlTerm" />
+      <item itemvalue="CMake Application.SFMLTEST" />
+      <item itemvalue="CMake Application.benchmark_residual" />
     </list>
   </component>
   <component name="TaskManager">
@@ -135,7 +215,12 @@
       <workItem from="1774301954177" duration="3068000" />
       <workItem from="1774466381445" duration="2134000" />
       <workItem from="1775130020144" duration="4243000" />
-      <workItem from="1775134295695" duration="714000" />
+      <workItem from="1775134295695" duration="938000" />
+      <workItem from="1775143676331" duration="1727000" />
+      <workItem from="1775243650962" duration="2468000" />
+      <workItem from="1775305085455" duration="2965000" />
+      <workItem from="1775381221550" duration="3251000" />
+      <workItem from="1775400150011" duration="475000" />
     </task>
     <task id="LOCAL-00001" summary="Cleaned and Organized the project.">
       <option name="closed" value="true" />
@@ -153,7 +238,15 @@
       <option name="project" value="LOCAL" />
       <updated>1775134169633</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Changed the Text color of the doors + Included the drawDoor function into the main code.">
+      <option name="closed" value="true" />
+      <created>1775135106859</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1775135106859</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -166,6 +259,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Cleaned and Organized the project." />
-    <option name="LAST_COMMIT_MESSAGE" value="Cleaned and Organized the project." />
+    <MESSAGE value="Changed the Text color of the doors + Included the drawDoor function into the main code." />
+    <option name="LAST_COMMIT_MESSAGE" value="Changed the Text color of the doors + Included the drawDoor function into the main code." />
   </component>
 </project>

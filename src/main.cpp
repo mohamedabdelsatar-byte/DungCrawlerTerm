@@ -1,11 +1,12 @@
 #include <iostream>
 #include <unistd.h>
 #include <cstdlib>
-#include <thread> 
+#include <thread>
 #include <chrono>
 #include <string>
 #include "Player.hpp"
-#include "ASCII_Art.hpp"
+//#include "ASCII_Art.hpp"
+
 using namespace std;
 
 
@@ -29,10 +30,10 @@ int main(){
     Player player1;
     do {
         int playChoice, menuChoice;
-        GameART::drawMenu();
+      //  GameART::drawMenu();
         std::cout<<"Player's choice: ";
         cin>>menuChoice;
-
+        cout<<"\033[H\033[2J";
         switch(menuChoice) {
             case 1:
                 cout<<"Name? ";
@@ -45,7 +46,7 @@ int main(){
                 delayMs(1000);
 
                     do{
-                        GameART::drawDoors();
+                       // GameART::drawDoors();
                         slowPrint("He ponders at which door to open? (1->5): ", 50);
                         cin>>playChoice;
 
@@ -105,6 +106,7 @@ ________________________________________________________________________________
 |||   Kahlid Waleed                         192500713                        |||
 |||   Abdulrahman Sami Hamza                192500851                        |||
 |||   Ahmed Hossam El-Din                   192500811                        |||
+|||   Yassin Mohamed El-Sayed               192400580                        |||
 |||                                                                          |||
 ||| ________________________________________________________________________ |||
 ||| []|[][][]|[][][]|[][][]|[][][]|[][][]|[][][]|[][][]|[][][]|[][][]|[]     |||
@@ -145,6 +147,7 @@ void slowPrint(const std::string &text, int speed) {
 void delayMs(int speed){
 this_thread::sleep_for(chrono::milliseconds(speed));
 };
+
 void Reset(Player &p, GameState &s){
     p.hasKey=false;
     p.Health=5;
@@ -156,7 +159,7 @@ void Reset(Player &p, GameState &s){
     for(bool & i : p.inv){
         i=false;
     }
-    
+
 
 }
 
@@ -206,10 +209,10 @@ void Door3(Player &p, GameState &s){
 //NO IDEA YET
 }
 void KeyRoom(Player &p, GameState &s){
-   
-    
+
+
     if(s.visited[3]==false && p.inv[SNAKE_TOOL]==false && s.completed[3]==false){
-   
+
     slowPrint(p.name + " slowly opens the door.....", 75);
     delayMs(500);
     slowPrint("a smell punches "+p.name+" and a loud hissing noise spreads around the hall..", 75);
@@ -218,7 +221,7 @@ void KeyRoom(Player &p, GameState &s){
     delayMs(500);
     slowPrint("As one of the snakes rush to bite "+p.name+", they shut the door immediately....", 75);
     s.visited[3]=true;
-    
+
     }
 
     else if(s.visited[3]==true && p.inv[SNAKE_TOOL]==false && s.completed[3]==false){
@@ -261,7 +264,7 @@ void KeyRoom(Player &p, GameState &s){
 void SnaketoolRoom(Player &p, GameState &s){
 /*Snake tool location IDEA
 
-this room will contain the snake tool to help with obtaining the doorkey. 
+this room will contain the snake tool to help with obtaining the doorkey.
 To get the tool, player must have the right combination to open the chest which contains it.
 this is where a puzzle must be solved. The combination will be located in a different room
 
