@@ -5,6 +5,8 @@ set(CMAKE_CXX_STANDARD 17)
 
 set(CMAKE_POLICY_VERSION_MINIMUM 3.5)
 
+
+
 include(FetchContent)
 
 FetchContent_Declare(
@@ -42,3 +44,5 @@ target_link_libraries(SFMLTEST PRIVATE
         SFML::System
         SFML::Audio
 )
+
+file(COPY Assets DESTINATION ${CMAKE_CURRENT_BINARY_DIR})
