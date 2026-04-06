@@ -7,8 +7,16 @@
 }*/
 
 int main() {
+    //---------------------------------  INITIALIZE   ---------------------------------------
     sf::RenderWindow window(sf::VideoMode({1920, 1080}), "DungCrawler");
+    //---------------------------------  INITIALIZE   ---------------------------------------
 
+    //---------------------------------  LOAD   ---------------------------------------
+
+    const int totalFrames = 6;
+    int currentFrame = 0;
+    sf::Clock animationClock;
+    sf::Time frames = sf::milliseconds(150);
 
     sf::Texture playerTexture;
     playerTexture.loadFromFile("Assets/Textures/Witch.png");
@@ -17,8 +25,19 @@ int main() {
     player.setPosition({960.f, 540.f});
 
 
+    //---------------------------------  LOAD   ---------------------------------------
+
+
+
+
+
+    // XIndex, YIndex*48, 32, 48
+
+
     //MAIN LOOP
     while (window.isOpen()) {
+        //---------------------------------  UPDATE   ---------------------------------------
+
         while (const std::optional event = window.pollEvent()) {
 
             if (event ->is<sf::Event::Closed>()) {
@@ -26,6 +45,18 @@ int main() {
             }
         }
 
+        //animations
+        if (animationClock.getElapsedTime() >= frames) {
+            currentFrame++;
+            if (currentFrame >= totalFrames) {
+                currentFrame = 0;
+            }
+
+            player.setTextureRect(sf::IntRect({0,currentFrame * 48}, {32, 48}));
+
+
+            animationClock.restart();
+        }
         //Player Movement
         sf::Vector2f vPlayerMovement(0.0f, 0.0f);
 
@@ -57,7 +88,9 @@ int main() {
 
         Door1.setFillColor(sf::Color::Blue);
 
+        //---------------------------------  UPDATE   ---------------------------------------
 
+        //----------------------------------  DRAW   ----------------------------------------
 
        // window.draw(Door1);
         window.draw(player);
@@ -65,6 +98,7 @@ int main() {
 
         window.display();
 
+        //----------------------------------  DRAW   ----------------------------------------
 
     }
 

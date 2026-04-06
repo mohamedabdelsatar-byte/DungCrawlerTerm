@@ -30,9 +30,16 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="862b815b-2ef7-451b-84af-6799d568dda9" name="Changes" comment="Changed the Text color of the doors + Included the drawDoor function into the main code.">
+    <list default="true" id="862b815b-2ef7-451b-84af-6799d568dda9" name="Changes" comment="Tested sprites, movement, changed a bit with the CMakeList.">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/Witch.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/Witch.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/flac-src/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/_deps/flac-src/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/flac-src/src/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/_deps/flac-src/src/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/freetype-src/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/_deps/freetype-src/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/ogg-src/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/_deps/ogg-src/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/vorbis-src/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/_deps/vorbis-src/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/vorbis-src/lib/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/_deps/vorbis-src/lib/CMakeLists.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/SFML_test.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/SFML_test.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -126,6 +133,11 @@
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="benchmark_residual" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="DungCrawlTerm" TARGET_NAME="benchmark_residual" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="DungCrawlTerm" RUN_TARGET_NAME="benchmark_residual">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -187,21 +199,21 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="CMake Application.DungCrawlTerm" />
       <item itemvalue="CMake Application.FLAC" />
-      <item itemvalue="CMake Application.SFMLTEST" />
-      <item itemvalue="CMake Application.benchmark_residual" />
       <item itemvalue="CMake Application.freetype" />
       <item itemvalue="CMake Application.ogg" />
-      <item itemvalue="CMake Application.sfml-audio" />
-      <item itemvalue="CMake Application.sfml-graphics" />
-      <item itemvalue="CMake Application.sfml-main" />
-      <item itemvalue="CMake Application.sfml-network" />
-      <item itemvalue="CMake Application.sfml-system" />
-      <item itemvalue="CMake Application.sfml-window" />
       <item itemvalue="CMake Application.vorbis" />
       <item itemvalue="CMake Application.vorbisenc" />
       <item itemvalue="CMake Application.vorbisfile" />
+      <item itemvalue="CMake Application.sfml-network" />
+      <item itemvalue="CMake Application.sfml-window" />
+      <item itemvalue="CMake Application.sfml-audio" />
+      <item itemvalue="CMake Application.sfml-graphics" />
+      <item itemvalue="CMake Application.sfml-main" />
+      <item itemvalue="CMake Application.sfml-system" />
+      <item itemvalue="CMake Application.DungCrawlTerm" />
+      <item itemvalue="CMake Application.SFMLTEST" />
+      <item itemvalue="CMake Application.benchmark_residual" />
     </list>
   </component>
   <component name="TaskManager">
@@ -225,7 +237,7 @@
       <workItem from="1775381221550" duration="3251000" />
       <workItem from="1775400150011" duration="475000" />
       <workItem from="1775401383476" duration="7847000" />
-      <workItem from="1775419594952" duration="6000" />
+      <workItem from="1775419594952" duration="4958000" />
     </task>
     <task id="LOCAL-00001" summary="Cleaned and Organized the project.">
       <option name="closed" value="true" />
@@ -251,7 +263,15 @@
       <option name="project" value="LOCAL" />
       <updated>1775135106859</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Tested sprites, movement, changed a bit with the CMakeList.">
+      <option name="closed" value="true" />
+      <created>1775419695499</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1775419695499</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -265,6 +285,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Cleaned and Organized the project." />
     <MESSAGE value="Changed the Text color of the doors + Included the drawDoor function into the main code." />
-    <option name="LAST_COMMIT_MESSAGE" value="Changed the Text color of the doors + Included the drawDoor function into the main code." />
+    <MESSAGE value="Tested sprites, movement, changed a bit with the CMakeList." />
+    <option name="LAST_COMMIT_MESSAGE" value="Tested sprites, movement, changed a bit with the CMakeList." />
   </component>
 </project>
